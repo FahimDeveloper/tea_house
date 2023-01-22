@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,8 +29,9 @@
                     </p>
                     <div class="btn">
                         <button
-                            class="text-xl text-white bg-gradient-to-r from-orange-400 to-red-600 rounded-lg px-5 py-4">
+                            class="text-xl text-white bg-gradient-to-r from-orange-400 to-red-600 rounded-lg px-5 py-4 capitalize">
                             explore more
+                            <img src="./images/arrow.png" class="inline" alt="">
                         </button>
                     </div>
                 </div>
@@ -52,8 +54,8 @@
                 </p>
                 <div class="tea_items grid grid-cols-4 gap-5 pt-10">
                     <div
-                        class="tea rounded-lg shadow-md text-center py-8 px-5 space-y-3 bg-gradient-to-t from-zinc-50 to-gray-200">
-                        <img src="./images/tea-1.png" class="mx-auto" alt="images not found">
+                        class="tea rounded-lg text-center py-8 px-5 space-y-3 bg-gradient-to-t from-zinc-50 to-gray-200">
+                        <img src="./images/tea-1.png" class="mx-auto mb-7" alt="images not found">
                         <h3 class="text-stone-900 capitalize font-extrabold text-2xl">
                             milk tea
                         </h3>
@@ -62,30 +64,30 @@
                         </p>
                     </div>
                     <div
-                        class="tea rounded-lg shadow-md text-center py-8 px-5 space-y-3 bg-gradient-to-t from-zinc-50 to-gray-200">
-                        <img src="./images/tea-2.png" class="mx-auto" alt="images not found">
+                        class="tea rounded-lg text-center py-8 px-5 space-y-3 bg-gradient-to-t from-zinc-50 to-gray-200">
+                        <img src="./images/tea-2.png" class="mx-auto mb-7" alt="images not found">
                         <h3 class="text-stone-900 capitalize font-extrabold text-2xl">
-                            milk tea
+                            black tea
                         </h3>
                         <p class="text-base text-neutral-500">
                             Creamer could be replaced by fresh milk
                         </p>
                     </div>
                     <div
-                        class="tea rounded-lg shadow-md text-center py-8 px-5 space-y-3 bg-gradient-to-t from-zinc-50 to-gray-200">
-                        <img src="./images/tea-3.png" class="mx-auto" alt="images not found">
+                        class="tea rounded-lg text-center py-8 px-5 space-y-3 bg-gradient-to-t from-zinc-50 to-gray-200">
+                        <img src="./images/tea-3.png" class="mx-auto mb-7" alt="images not found">
                         <h3 class="text-stone-900 capitalize font-extrabold text-2xl">
-                            milk tea
+                            lemon tea
                         </h3>
                         <p class="text-base text-neutral-500">
                             Creamer could be replaced by fresh milk
                         </p>
                     </div>
                     <div
-                        class="tea rounded-lg shadow-md text-center py-8 px-5 space-y-3 bg-gradient-to-t from-zinc-50 to-zinc-200">
-                        <img src="./images/tea-4.png" class="mx-auto" alt="images not found">
+                        class="tea rounded-lg text-center py-8 px-5 space-y-3 bg-gradient-to-t from-zinc-50 to-zinc-200">
+                        <img src="./images/tea-4.png" class="mx-auto mb-7" alt="images not found">
                         <h3 class="text-stone-900 capitalize font-extrabold text-2xl">
-                            milk tea
+                            green tea
                         </h3>
                         <p class="text-base text-neutral-500">
                             Creamer could be replaced by fresh milk
@@ -134,9 +136,79 @@
                 </div>
             </div>
         </section>
-        <section class="clients_area">
+        <section class="clients_area py-20">
             <div class="container mx-auto">
-
+                <div
+                    class="clients_content grid grid-cols-2 items-center bg-gradient-to-r from-orange-400 to-red-600 rounded-lg py-28 px-20">
+                    <div class="content space-y-6">
+                        <h2 class="capitalize text-5xl font-extrabold text-zinc-100">
+                            meet our super clients
+                        </h2>
+                        <p class="text-zinc-100 font-medium">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable.
+                        </p>
+                        <div class="btn">
+                            <button class="text-xl font-bold text-orange-500 bg-white rounded-lg px-6 py-3 capitalize">
+                                show all
+                            </button>
+                        </div>
+                    </div>
+                    <div class="clients">
+                        <div class="clients_slider">
+                            <div class=" client bg-white w-9/12 p-12 relative rounded-lg space-y-3">
+                                <img src="./images/client.png"
+                                    class="absolute -top-7 -left-7 border-4 rounded-full border-white"
+                                    alt="images not found">
+                                <p class="text-base text-neutral-500">
+                                    We are providing the best and suitable home insurance services for the people who
+                                    are
+                                    interested to treatment
+                                </p>
+                                <h4 class="capitalize text-base font-bold">
+                                    hasina parkar
+                                </h4>
+                                <p class="font-medium capitalize text-sm">
+                                    business man
+                                </p>
+                            </div>
+                            <div class=" client bg-white w-9/12 p-12 relative rounded-lg space-y-3">
+                                <img src="./images/client.png"
+                                    class="absolute -top-7 -left-7 border-4 rounded-full border-white"
+                                    alt="images not found">
+                                <p class="text-base text-neutral-500">
+                                    We are providing the best and suitable home insurance services for the people who
+                                    are
+                                    interested to treatment
+                                </p>
+                                <h4 class="capitalize text-base font-bold">
+                                    hasina parkar
+                                </h4>
+                                <p class="font-medium capitalize text-sm">
+                                    business man
+                                </p>
+                            </div>
+                            <div class=" client bg-white w-9/12 p-12 relative rounded-lg space-y-3">
+                                <img src="./images/client.png"
+                                    class="absolute -top-7 -left-7 border-4 rounded-full border-white"
+                                    alt="images not found">
+                                <p class="text-base text-neutral-500">
+                                    We are providing the best and suitable home insurance services for the people who
+                                    are
+                                    interested to treatment
+                                </p>
+                                <h4 class="capitalize text-base font-bold">
+                                    hasina parkar
+                                </h4>
+                                <p class="font-medium capitalize text-sm">
+                                    business man
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
         <section class="news_area">
